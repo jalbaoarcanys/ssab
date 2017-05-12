@@ -1,0 +1,226 @@
+.page-header {
+	margin-top: 100px;
+	background-color: $primary-color;
+	text-align: right;
+	min-height: 120px;
+	margin-bottom: 30px;
+	background-image: url(../img/windmill.jpg);
+	background-size: cover;
+	background-position: 100% 25%;
+	background-repeat: no-repeat;
+	
+	@media screen and (max-width: 480px) {
+		background-size: initial;
+	}
+	
+	h1 {
+		padding-top: 38px;
+		color: #fff;
+	}
+}
+
+.ssab-section-main {
+	margin-bottom: 30px;
+	
+	.container {
+		background-color: #fff;
+		
+		.ssab-page-title {
+			background-color: $secondary-color;
+			color: $primary-color;
+			min-height: 80px;
+			
+			h3 {
+				padding-top: 26px;
+				padding-left: 26px;
+				text-transform: uppercase;
+				margin-bottom: 0;
+			}
+		}
+	}
+	
+}
+
+.ssab-search-box {
+	background-color: $tertiary-color;
+	
+	.ssab-filters {
+		padding: 15px 30px;
+		height: 100%;
+		overflow: hidden;
+		
+		.ssab-filter-item {
+			min-height: 240px;
+			padding: 0;
+			
+			@media screen and (max-width: 480px) {
+				width: 100%;
+				min-height: 0;
+			}
+		
+			.collapse {
+				max-height: 240px;
+				overflow-y: auto;
+				
+				@media screen and (max-width: $tablet-width) {
+					max-height: initial;
+				}
+			
+			}
+		}
+		
+		@media screen and (max-width: 1200px) {
+			.col-sm-2 {
+				padding: 0px;
+			}
+		}
+		
+		.ssab-filter-section {
+			@media screen and (max-width: $tablet-width) {
+					max-height: 300px;
+					overflow-y: auto;
+				}
+		}
+		
+		.ssab-filter-titledv {padding: 0;}
+	}
+	
+	.ssab-result-box {
+		padding: 30px;
+		background-color: #fff;
+		min-height: 400px;
+		
+		.ssab-resultdv {
+			width: 50%;
+			@media screen and (max-width: 991px) {
+				width: 100%;
+			}
+			
+		}
+	}
+	
+	.btn {
+		float: right;
+		margin: 10px 0 0 0;
+	}
+}
+
+.ssab-cert-section {
+	.ssab-search-box {
+		.btn {
+			margin-top: 26px;
+			margin-right: 30px;
+		}
+	}
+}
+
+#collapsecert {
+	.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+		width: auto;
+	}
+	.table-striped > tbody > tr:nth-child(odd) {
+		background-color: $tertiary-color;
+	}
+	.table-striped > tbody > tr:nth-child(even) {
+	background-color: #fff;
+	}
+	thead {
+		text-transform: uppercase;
+	}
+	a {
+		color: $base-font-color;
+	}
+}
+
+.ssab-startdv {
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+	
+	.ssab-welcometext {
+		position: absolute;
+		left: 50%;
+		color: #fff;
+		font-size: 50px;
+		margin-top: 50px;
+		margin-left: -180px;
+	}
+}
+
+.ssab-start-section {
+	.container {
+		padding: 0px;
+	}
+}
+
+.ssab-home {
+	background-image: url(../img/steel.jpg);
+	height: 100vh;
+ 	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+	.ssab-logindv {
+		width: 700px;
+		display: block;
+		margin: 0 auto;
+		background-image: url(../img/arrow.png);
+    background-position: bottom left;
+		background-repeat: no-repeat;
+		padding: 80px 0 0 50px;
+    height: 600px;
+		
+		.ssab-homelogo {
+			width: 100px;
+		}
+		
+		.ssab-homewelcome {
+			display: block;
+			font-size: 26px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			color: #000;
+		}
+		
+		#username,
+		#password {
+			border: none;
+			background-color: initial;
+			box-shadow: none;
+			border-radius: 0;
+			width: 200px;
+			border-bottom: 1px solid $primary-color;
+			padding-left: 0;
+			margin-bottom: 20px;
+		}
+		
+		.btn {
+			background-color: $primary-color;
+			color: #fff;
+			margin: 20px 0 10px;
+			
+		}
+		
+		.ssab-homenote {
+			display: block;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

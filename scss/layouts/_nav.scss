@@ -1,0 +1,114 @@
+/* Navbar */
+
+.navbar {
+	min-height: 100px;
+	background: #fff;
+	border: none;
+	margin-bottom: 0;
+	
+	a {
+		color: $base-font-color !important;
+		font-size: 16px;
+		padding-top: 40px !important;
+		padding-bottom: 40px !important;
+		text-transform: uppercase;
+		
+	}
+	
+	.pull-right a:hover,
+	.pull-right a:focus {
+		background-color: #fff !important;
+		color: $primary-color !important;
+	}
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+	background-color: $light-color;
+	color: $base-font-color;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: $light-color;
+	color: $base-font-color;
+}
+
+.navbar-brand > img {
+	height: 24px;
+}
+
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+  	float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+	  margin-top: 36px;
+  }
+  .navbar-collapse {
+  	border-top: 1px solid transparent;
+  	box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .navbar-inverse .navbar-toggle .icon-bar {
+	  background-color: $primary-color;	
+  }
+  .navbar-inverse .navbar-toggle {
+	  border-color: $primary-color;
+  }
+	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+		background-color: $tertiary-color;
+	}
+	
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+		border: none; 
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		padding: 20px 15px !important;
+	}
+	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+		overflow-y: scroll !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

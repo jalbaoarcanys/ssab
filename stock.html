@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>SSAB - Stock</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/ssab-logo.png" alt="SSAB"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="start.html">Start</a></li>
+            <li class="active"><a href="stock.html">Stock</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Invoices</a></li>
+            <li><a href="#">Admin</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-sub pull-right">
+          	<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+          	<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+          	<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+          	<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          		<ul class="dropdown-menu">
+       				<li><a href="home.html">Logout</a></li>
+   				</ul>
+          	</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <div class="page-header">
+	  <div class="container"> 
+	    <h1>Customer Portal</h1>
+	  </div>
+    </div>
+    
+    <section class="ssab-section-main">
+      <div class="container">
+        <div class="row">
+    	  <div class="ssab-page-title">
+    	    <h3>Stock Search</h3>
+    	  </div>
+    	  <div class="ssab-search-box">
+    				
+    				<div class="ssab-filters">
+    					<div class="row visible-md-block visible-lg-block">
+							<div class="ssab-filter-title">
+								<div class="col-sm-2 ssab-filter-titledv">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="icon-toggle" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Country <span class="badge">1</span></a>
+										</h4>
+									</div>
+								</div>
+								<div class="col-sm-2 ssab-filter-titledv">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="icon-toggle2" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Stock <span class="badge">3</span></a>
+										</h4>
+									</div>
+								</div>
+								<div class="col-sm-2 ssab-filter-titledv">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="icon-toggle3" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Product <span class="badge">1</span></a>
+										</h4>
+									</div>
+								</div>
+								<div class="col-sm-2 ssab-filter-titledv">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="icon-toggle4" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Grade <span class="badge">1</span></a>
+										</h4>
+									</div>
+								</div>
+								<div class="col-sm-2 ssab-filter-titledv">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="icon-toggle5" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Thickness <span class="badge">1</span></a>
+										</h4>
+									</div>
+								</div>
+								<div class="col-sm-2 ssab-filter-titledv">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a class="icon-toggle6" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Geometric <span class="badge">1</span></a>
+										</h4>
+									</div>
+								</div>
+							</div>
+   						</div>
+   						<div id="collapsefilter" class="row ssab-filter-section collapse in">
+							<div class="ssab-filter-item col-xs-6 col-sm-4 col-md-2">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<div class="panel-heading hidden-lg hidden-md">
+											<h4 class="panel-title">
+												<a class="icon-toggle" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Country <span class="badge">1</span></a>
+											</h4>
+										</div>
+										<div id="collapse1" class="collapse in">
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest" class="css-checkbox lrg"/>
+												<label for="checkboxtest" name="checkboxtest_lbl" class="css-label lrg test">Australia</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest2" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest2" name="checkboxtest_lbl2" class="css-label lrg test">Germany</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest3" class="css-checkbox lrg"/>
+												<label for="checkboxtest3" name="checkboxtest_lbl3" class="css-label lrg test">Russia</label>
+											</div>							
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ssab-filter-item col-xs-6 col-sm-4 col-md-2">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<div class="panel-heading hidden-lg hidden-md">
+											<h4 class="panel-title">
+												<a class="icon-toggle2" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Stock <span class="badge">3</span></a>
+											</h4>
+										</div>
+										<div id="collapse2" class="collapse in">
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest4" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest4" name="checkboxtest_lbl4" class="css-label lrg test">Adelaide</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest5" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest5" name="checkboxtest_lbl5" class="css-label lrg test">Brisbane</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest6" class="css-checkbox lrg"/>
+												<label for="checkboxtest6" name="checkboxtest_lbl6" class="css-label lrg test">Melbourne</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest7" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest7" name="checkboxtest_lbl7" class="css-label lrg test">Perth</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest8" class="css-checkbox lrg"/>
+												<label for="checkboxtest8" name="checkboxtest_lbl8" class="css-label lrg test">Sidney</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ssab-filter-item col-xs-6 col-sm-4 col-md-2">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<div class="panel-heading hidden-lg hidden-md">
+											<h4 class="panel-title">
+												<a class="icon-toggle3" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Product <span class="badge">1</span></a>
+											</h4>
+										</div>
+										<div id="collapse3" class="collapse in">
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest14" class="css-checkbox lrg"/>
+												<label for="checkboxtest14" name="checkboxtest_lbl14" class="css-label lrg test">Hardox</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest15" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest15" name="checkboxtest_lbl15" class="css-label lrg test">Strenx</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest16" class="css-checkbox lrg"/>
+												<label for="checkboxtest16" name="checkboxtest_lbl16" class="css-label lrg test">Domex</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ssab-filter-item col-xs-6 col-sm-4 col-md-2">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<div class="panel-heading hidden-lg hidden-md">
+											<h4 class="panel-title">
+												<a class="icon-toggle4" data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Grade <span class="badge">1</span></a>
+											</h4>
+										</div>
+										<div id="collapse4" class="collapse in">
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest17" class="css-checkbox lrg"/>
+												<label for="checkboxtest17" name="checkboxtest_lb17" class="css-label lrg test">Hardox 400</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest18" class="css-checkbox lrg"/>
+												<label for="checkboxtest18" name="checkboxtest_lbl18" class="css-label lrg test">Hardox 450</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest19" class="css-checkbox lrg"/>
+												<label for="checkboxtest19" name="checkboxtest_lb19" class="css-label lrg test">Hardox 500</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest20" class="css-checkbox lrg"/>
+												<label for="checkboxtest20" name="checkboxtest_lbl20" class="css-label lrg test">Hardox 550</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest21" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest21" name="checkboxtest_lb21" class="css-label lrg test">Hardox 600</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ssab-filter-item col-xs-6 col-sm-4 col-md-2">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<div class="panel-heading hidden-lg hidden-md">
+											<h4 class="panel-title">
+												<a class="icon-toggle5" data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Thickness <span class="badge">1</span></a>
+											</h4>
+										</div>
+										<div id="collapse5" class="collapse in">
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest22" class="css-checkbox lrg"/>
+												<label for="checkboxtest22" name="checkboxtest_lb22" class="css-label lrg test">3.2 mm</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest23" class="css-checkbox lrg"/>
+												<label for="checkboxtest23" name="checkboxtest_lbl23" class="css-label lrg test">4 mm</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest24" class="css-checkbox lrg"/>
+												<label for="checkboxtest24" name="checkboxtest_lb24" class="css-label lrg test">5 mm</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest25" class="css-checkbox lrg"/>
+												<label for="checkboxtest25" name="checkboxtest_lbl25" class="css-label lrg test">6 mm</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest26" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest26" name="checkboxtest_lb26" class="css-label lrg test">7 mm</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest27" class="css-checkbox lrg"/>
+												<label for="checkboxtest27" name="checkboxtest_lb27" class="css-label lrg test">8 mm</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ssab-filter-item col-xs-6 col-sm-4 col-md-2">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<div class="panel-heading hidden-lg hidden-md">
+											<h4 class="panel-title">
+												<a class="icon-toggle6" data-toggle="collapse" href="#collapse6" aria-expanded="true" aria-controls="collapse6"><i class="fa fa-angle-down" aria-hidden="true"></i><i class="fa fa-angle-up" aria-hidden="true"></i> Geometric <span class="badge">1</span></a>
+											</h4>
+										</div>
+										<div id="collapse6" class="collapse in">
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest28" class="css-checkbox lrg"/>
+												<label for="checkboxtest28" name="checkboxtest_lb28" class="css-label lrg test">ERB</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest29" class="css-checkbox lrg"/>
+												<label for="checkboxtest29" name="checkboxtest_lbl29" class="css-label lrg test">Guard Rail</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest30" class="css-checkbox lrg"/>
+												<label for="checkboxtest30" name="checkboxtest_lb30" class="css-label lrg test">Hollow Section</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest31" class="css-checkbox lrg"/>
+												<label for="checkboxtest31" name="checkboxtest_lbl31" class="css-label lrg test">Kit</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest32" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest32" name="checkboxtest_lb32" class="css-label lrg test">Large Diameter</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest33" class="css-checkbox lrg"/>
+												<label for="checkboxtest33" name="checkboxtest_lb33" class="css-label lrg test">Line Pipe</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest34" class="css-checkbox lrg" checked="checked"/>
+												<label for="checkboxtest34" name="checkboxtest_lb34" class="css-label lrg test">Micropile</label>
+											</div>
+											<div class="checkbox">
+											  <input type="checkbox" id="checkboxtest35" class="css-checkbox lrg"/>
+												<label for="checkboxtest35" name="checkboxtest_lb35" class="css-label lrg test">Other</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+   						<button class="btn btn-primary text-toogle" type="button" data-toggle="collapse" data-target="#collapsefilter" aria-expanded="true" aria-controls="collapsefilter">
+   							<span class="text-collapsed">Search</span>
+    						<span class="text-expanded">Refine</span>
+   						</button>
+    				</div>
+    				
+    				<div class="ssab-result-box">
+    					<div class="ssab-resultdv">
+							<div class="table-responsive">
+								<table class="table table-striped">
+								  <thead class="success">
+									<tr>
+									  <th>Available - Hardox 450</th>
+									  <th>Stock</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<tr>
+									  <td>8 x 2000 x 4000 mm</td>
+									  <td>Perth</td>
+									</tr>
+									<tr>
+									  <td>8 x 2000 x 6000 mm</td>
+									  <td>Brisbane</td>
+									</tr>
+									<tr>
+									  <td>8 x 2000 x 9600 mm</td>
+									  <td>Melbourne</td>
+									</tr>
+									<tr>
+									  <td>8 x 2000 x 9600 mm</td>
+									  <td>Melbourne</td>
+									</tr>
+								  </tbody>
+								</table>
+							</div>
+						</div>
+   						<div class="ssab-resultdv">
+							<div class="table-responsive">
+								<table class="table table-striped">
+								  <thead class="warning">
+									<tr>
+									  <th>Few Available - Hardox 450</th>
+									  <th>Stock</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<tr>
+									  <td>8 x 2000 x 4000 mm</td>
+									  <td>Melbourne</td>
+									</tr>
+									<tr>
+									  <td>8 x 2000 x 6000 mm</td>
+									  <td>Brisbane</td>
+									</tr>
+									<tr>
+									  <td>8 x 2000 x 9600 mm</td>
+									  <td>Adelaide</td>
+									</tr>
+									<tr>
+									  <td>8 x 2000 x 9600 mm</td>
+									  <td>Perth</td>
+									</tr>
+								  </tbody>
+								</table>
+							</div>
+						</div>
+   						<div class="ssab-notedv">
+    						<p>For other dimension, please call us: 0123-12 34 56 78</p>
+    					</div>
+    				</div>
+    		
+    			</div>
+    	</div>
+      </div>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script> 
+  </body>
+</html>

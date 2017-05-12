@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>SSAB - Certifications</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  
+ <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/ssab-logo.png" alt="SSAB"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="start.html">Start</a></li>
+            <li><a href="stock.html">Stock</a></li>
+            <li class="active"><a href="certifications.html">Certifications</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Invoices</a></li>
+            <li><a href="#">Admin</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-sub pull-right">
+          	<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+          	<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+          	<li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+          	<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-user" aria-hidden="true"></i> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          		<ul class="dropdown-menu">
+       				<li><a href="home.html">Logout</a></li>
+   				</ul>
+          	</li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+   <div class="page-header">
+    	<div class="container"> 
+    		<h1>Customer Portal</h1>
+    	</div>
+    </div>
+    
+    <section class="ssab-section-main ssab-cert-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="ssab-page-title">
+    				<h3>Certificate Search</h3>
+    			</div>
+    			<div class="ssab-search-box">
+    				
+    				<div class="ssab-filters">
+    					<div class="row">
+							
+							  
+							   <div class="col-md-2">
+								<form method="post">
+								 <div class="form-group ">
+								  <label class="control-label " for="date">
+								   From
+								  </label>
+								  <div class="input-group">
+								   <div class="input-group-addon ssab-datedv">
+									<i class="fa fa-calendar">
+									</i>
+								   </div>
+								   <input class="form-control" id="date" name="date" placeholder="YYYY-MM-DD" type="text"/>
+								  </div>
+								 </div>
+								</form>
+							   </div>
+							   <div class="col-md-2">
+								<form method="post">
+								 <div class="form-group ">
+								  <label class="control-label " for="date">
+								   To
+								  </label>
+								  <div class="input-group">
+								   <div class="input-group-addon ssab-datedv">
+									<i class="fa fa-calendar">
+									</i>
+								   </div>
+								   <input class="form-control" id="date2" name="date2" placeholder="YYYY-MM-DD" type="text"/>
+								  </div>
+								 </div>
+								</form>
+							   </div>
+							   <div class="col-md-6 ssab-searchdv">
+								   <form method="post">
+										 <div class="form-group ">
+
+											<div class="input-group">
+											 <div class="input-group-addon ssab-datedv">
+											<i class="fa fa-search">
+											</i>
+											 </div>
+											 <input class="form-control" id="search" name="search" placeholder="Search" type="search"/>
+											</div>
+										 </div>
+										</form>
+										<div class="search-note">
+											<p>Search for Delivery number, SSAB order number, Purchase Order number or Certificate number</p>
+										</div>
+							   </div>
+							   
+							   
+   							<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsecert" aria-expanded="false" aria-controls="collapsecert">Search</button>
+   						</div>
+    				</div>
+    				
+    				<div class="ssab-result-box">
+    				
+    					<div id="collapsecert" class="collapse">
+    						<div class="table-responsive">
+								<table class="table table-striped">
+								  <thead class="">
+									<tr>
+									  <th>Date</th>
+									  <th>Grade</th>
+									  <th>SSAB Order Number</th>
+									  <th>Certificate Number</th>
+									  <th>Invoice Number</th>
+									  <th></th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<tr>
+									  <td>2017-02-06</td>
+									  <td>Hardox 450</td>
+									  <td>115666-4</td>
+									  <td>15328599</td>
+									  <td>3458902</td>
+									  <td><a href=""><i class="fa fa-hdd-o" aria-hidden="true"></i>  Download</a></td>
+									</tr>
+									<tr>
+									  <td>2017-02-06</td>
+									  <td>Hardox 450</td>
+									  <td>115666-4</td>
+									  <td>15328599</td>
+									  <td>3458902</td>
+									  <td><a href=""><i class="fa fa-hdd-o" aria-hidden="true"></i>  Download</a></td>
+									</tr>
+								  </tbody>
+								</table>
+							</div>
+    					</div>
+    					
+    				</div>
+    		
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script> 
+  </body>
+</html>
+
+  
+ 
+
+

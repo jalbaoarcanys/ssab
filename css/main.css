@@ -1,0 +1,554 @@
+/*
+	SSAB
+	Version: 0.0.1
+*/
+/* BASE */
+/* Font Colors */
+/* Background Colors */
+/* Media Queries */
+/* Mixins */
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+body {
+  font-family: "Calibri", sans-serif;
+  font-size: 14px;
+  line-height: 1.7em;
+  color: #616365;
+  background-color: #dfe0e0;
+}
+
+a {
+  color: #002664;
+  transition: all 0.5s ease 0s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input,
+textarea,
+buttons {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+label {
+  font-weight: normal;
+}
+
+/* MODULES */
+.btn {
+  background-color: #fff;
+  color: #002664;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 0px;
+  font-weight: 700;
+  transition: all 0.5s ease 0s;
+}
+
+.btn:hover {
+  background-color: #002664;
+  color: #fff;
+}
+
+.btn:focus {
+  background-color: #fff;
+  color: #002664;
+}
+
+.text-toogle[aria-expanded=true] .text-expanded {
+  display: none;
+}
+
+.text-toogle[aria-expanded=false] .text-collapsed {
+  display: none;
+}
+
+.panel {
+  background-color: initial;
+  border: none;
+  box-shadow: none;
+}
+
+.panel-default > .panel-heading {
+  color: #002664;
+  background-color: initial;
+  border-color: initial;
+}
+
+.panel-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.panel-title .fa {
+  margin-right: 5px;
+}
+
+.checkbox {
+  font-size: 16px;
+  color: #616365;
+}
+
+@media (min-width: 1024px) {
+  .hidden-md-up {
+    display: none;
+  }
+}
+
+.panel-heading {
+  color: #002664;
+  padding: 10px 15px 10px 0;
+}
+
+.badge {
+  float: right;
+  background-color: #b8b9ba !important;
+}
+
+table .success {
+  background-color: #6a7f10;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+table .warning {
+  background-color: #e8ce79;
+  text-transform: uppercase;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  background-color: initial;
+}
+
+.table-striped > tbody > tr:nth-child(even) {
+  background-color: #eaf4f7;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  border-top: 0px;
+  border-bottom: 0px;
+  padding: 12px;
+  width: 50%;
+}
+
+.input-group-addon {
+  background: none;
+  border: none;
+}
+
+#date, #date2 {
+  border: none;
+  background: none;
+  box-shadow: none;
+  font-size: 18px;
+  color: #616365;
+  border-bottom: 1px solid #616365;
+  border-radius: 0px;
+  padding: 6px 0;
+}
+
+#search {
+  border: none;
+  background: none;
+  box-shadow: none;
+  font-size: 18px;
+  color: #616365;
+  padding: 6px 0;
+}
+
+.ssab-datedv {
+  font-size: 18px;
+  padding: 0 10px 0 0;
+}
+
+.ssab-searchdv {
+  padding-top: 29px;
+}
+
+.ssab-searchdv .form-group {
+  margin-bottom: 0;
+  border-bottom: 1px solid #616365;
+}
+
+.ssab-searchdv .search-note {
+  font-size: 12px;
+  color: #A0A0A0;
+}
+
+/* Customize Checklist */
+label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.test {
+  background-image: url(../img/check.png);
+}
+
+input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg {
+  background-position: 0 -28px;
+}
+
+input[type=checkbox].css-checkbox.lrg + label.css-label.lrg {
+  padding-left: 32px;
+  height: 25px;
+  display: inline-block;
+  line-height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Icon Toggle */
+.icon-toggle[aria-expanded=true] .fa-angle-down,
+.icon-toggle2[aria-expanded=true] .fa-angle-down,
+.icon-toggle3[aria-expanded=true] .fa-angle-down,
+.icon-toggle4[aria-expanded=true] .fa-angle-down,
+.icon-toggle5[aria-expanded=true] .fa-angle-down,
+.icon-toggle6[aria-expanded=true] .fa-angle-down {
+  display: none;
+}
+
+.icon-toggle[aria-expanded=false] .fa-angle-up,
+.icon-toggle2[aria-expanded=false] .fa-angle-up,
+.icon-toggle3[aria-expanded=false] .fa-angle-up,
+.icon-toggle4[aria-expanded=false] .fa-angle-up,
+.icon-toggle5[aria-expanded=false] .fa-angle-up,
+.icon-toggle6[aria-expanded=false] .fa-angle-up {
+  display: none;
+}
+
+.page-header {
+  margin-top: 100px;
+  background-color: #002664;
+  text-align: right;
+  min-height: 120px;
+  margin-bottom: 30px;
+  background-image: url(../img/windmill.jpg);
+  background-size: cover;
+  background-position: 100% 25%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+  .page-header {
+    background-size: initial;
+  }
+}
+
+.page-header h1 {
+  padding-top: 38px;
+  color: #fff;
+}
+
+.ssab-section-main {
+  margin-bottom: 30px;
+}
+
+.ssab-section-main .container {
+  background-color: #fff;
+}
+
+.ssab-section-main .container .ssab-page-title {
+  background-color: #bfdee8;
+  color: #002664;
+  min-height: 80px;
+}
+
+.ssab-section-main .container .ssab-page-title h3 {
+  padding-top: 26px;
+  padding-left: 26px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.ssab-search-box {
+  background-color: #eaf4f7;
+}
+
+.ssab-search-box .ssab-filters {
+  padding: 15px 30px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ssab-search-box .ssab-filters .ssab-filter-item {
+  min-height: 240px;
+  padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .ssab-search-box .ssab-filters .ssab-filter-item {
+    width: 100%;
+    min-height: 0;
+  }
+}
+
+.ssab-search-box .ssab-filters .ssab-filter-item .collapse {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .ssab-search-box .ssab-filters .ssab-filter-item .collapse {
+    max-height: initial;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ssab-search-box .ssab-filters .col-sm-2 {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ssab-search-box .ssab-filters .ssab-filter-section {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+.ssab-search-box .ssab-filters .ssab-filter-titledv {
+  padding: 0;
+}
+
+.ssab-search-box .ssab-result-box {
+  padding: 30px;
+  background-color: #fff;
+  min-height: 400px;
+}
+
+.ssab-search-box .ssab-result-box .ssab-resultdv {
+  width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .ssab-search-box .ssab-result-box .ssab-resultdv {
+    width: 100%;
+  }
+}
+
+.ssab-search-box .btn {
+  float: right;
+  margin: 10px 0 0 0;
+}
+
+.ssab-cert-section .ssab-search-box .btn {
+  margin-top: 26px;
+  margin-right: 30px;
+}
+
+#collapsecert .table > thead > tr > th, #collapsecert .table > tbody > tr > th, #collapsecert .table > tfoot > tr > th, #collapsecert .table > thead > tr > td, #collapsecert .table > tbody > tr > td, #collapsecert .table > tfoot > tr > td {
+  width: auto;
+}
+
+#collapsecert .table-striped > tbody > tr:nth-child(odd) {
+  background-color: #eaf4f7;
+}
+
+#collapsecert .table-striped > tbody > tr:nth-child(even) {
+  background-color: #fff;
+}
+
+#collapsecert thead {
+  text-transform: uppercase;
+}
+
+#collapsecert a {
+  color: #616365;
+}
+
+.ssab-startdv {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ssab-startdv .ssab-welcometext {
+  position: absolute;
+  left: 50%;
+  color: #fff;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-left: -180px;
+}
+
+.ssab-start-section .container {
+  padding: 0px;
+}
+
+.ssab-home {
+  background-image: url(../img/steel.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ssab-home .ssab-logindv {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+  background-image: url(../img/arrow.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  padding: 80px 0 0 50px;
+  height: 600px;
+}
+
+.ssab-home .ssab-logindv .ssab-homelogo {
+  width: 100px;
+}
+
+.ssab-home .ssab-logindv .ssab-homewelcome {
+  display: block;
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.ssab-home .ssab-logindv #username,
+.ssab-home .ssab-logindv #password {
+  border: none;
+  background-color: initial;
+  box-shadow: none;
+  border-radius: 0;
+  width: 200px;
+  border-bottom: 1px solid #002664;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.ssab-home .ssab-logindv .btn {
+  background-color: #002664;
+  color: #fff;
+  margin: 20px 0 10px;
+}
+
+.ssab-home .ssab-logindv .ssab-homenote {
+  display: block;
+}
+
+/* LAYOUTS */
+/* Navbar */
+.navbar {
+  min-height: 100px;
+  background: #fff;
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar a {
+  color: #616365 !important;
+  font-size: 16px;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  text-transform: uppercase;
+}
+
+.navbar .pull-right a:hover,
+.navbar .pull-right a:focus {
+  background-color: #fff !important;
+  color: #002664 !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  background-color: #dfe0e0;
+  color: #616365;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #dfe0e0;
+  color: #616365;
+}
+
+.navbar-brand > img {
+  height: 24px;
+}
+
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left, .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+    margin-top: 36px;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #002664;
+  }
+  .navbar-inverse .navbar-toggle {
+    border-color: #002664;
+  }
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #eaf4f7;
+  }
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    padding: 20px 15px !important;
+  }
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    overflow-y: scroll !important;
+  }
+}

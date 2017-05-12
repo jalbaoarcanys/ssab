@@ -1,0 +1,202 @@
+.panel {
+	background-color: initial;
+	border: none;
+	box-shadow: none;
+}
+
+.panel-default > .panel-heading {
+	color: $primary-color;
+	background-color: initial;
+	border-color: initial;
+}
+
+.panel-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	
+	.fa {
+		margin-right: 5px;
+	}
+}
+
+.checkbox {
+	font-size: 16px;
+	color: $base-font-color;
+}
+
+.hidden-md-up {
+	@include desktop {
+		display: none;
+	}
+}
+
+.panel-heading {
+	color: $primary-color;
+	padding: 10px 15px 10px 0;
+}
+
+.badge {
+	float: right;
+	background-color: #b8b9ba !important;
+}
+
+table {
+	.success {
+		background-color: #6a7f10;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	
+	.warning {
+		background-color: #e8ce79;
+		text-transform: uppercase;
+	}
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+	background-color: initial;
+}
+
+.table-striped > tbody > tr:nth-child(even) {
+	background-color: $tertiary-color;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	border-top: 0px;
+	border-bottom: 0px;
+	padding: 12px;
+	width: 50%;
+}
+
+.input-group-addon {
+	background: none;
+	border: none;
+}
+
+#date, #date2 {
+	border: none;
+	background: none;
+	box-shadow: none;
+	font-size: 18px;
+	color: $base-font-color;
+	border-bottom: 1px solid $base-font-color;
+	border-radius: 0px;
+	padding: 6px 0;
+}
+
+#search {
+	border: none;
+	background: none;
+	box-shadow: none;
+	font-size: 18px;
+	color: $base-font-color;
+	padding: 6px 0;
+}
+
+
+.ssab-datedv {
+	font-size: 18px;
+	padding: 0 10px 0 0;
+}
+
+.ssab-searchdv {
+	padding-top: 29px;
+	
+	.form-group {
+		margin-bottom: 0;
+		border-bottom: 1px solid $base-font-color;
+	}
+	
+	.search-note {
+		font-size: 12px;
+		color: #A0A0A0;
+	}
+}
+
+/* Customize Checklist */
+
+label {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0;
+	border:0;
+}
+
+.test{background-image:url(../img/check.png)}
+
+input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg {
+    background-position: 0 -28px;
+}
+
+input[type=checkbox].css-checkbox.lrg + label.css-label.lrg {
+	padding-left:32px;
+  height: 25px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:16px;
+	vertical-align:middle;
+  cursor:pointer;
+}
+
+/* Icon Toggle */
+
+.icon-toggle[aria-expanded=true] .fa-angle-down,
+.icon-toggle2[aria-expanded=true] .fa-angle-down,
+.icon-toggle3[aria-expanded=true] .fa-angle-down,
+.icon-toggle4[aria-expanded=true] .fa-angle-down,
+.icon-toggle5[aria-expanded=true] .fa-angle-down,
+.icon-toggle6[aria-expanded=true] .fa-angle-down {
+  display: none;
+}
+.icon-toggle[aria-expanded=false] .fa-angle-up,
+.icon-toggle2[aria-expanded=false] .fa-angle-up,
+.icon-toggle3[aria-expanded=false] .fa-angle-up,
+.icon-toggle4[aria-expanded=false] .fa-angle-up,
+.icon-toggle5[aria-expanded=false] .fa-angle-up,
+.icon-toggle6[aria-expanded=false] .fa-angle-up {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
